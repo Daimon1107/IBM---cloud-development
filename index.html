@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Web App - Simple Interest Calculator</title>
+
+    </head>
+    <body >
+       
+        <div class="maindiv">
+            <!--first block where the data is entered and displayed with a margin on the left hand side-->
+            <div class="first">
+                <h1>Simple Interest Calculator</h1>
+                <label>Amount</label>
+                 <input type="number"  id="principal" style="border-radius: 5px;">  <br/> <br>
+                 <label>Rate</label>
+                <input type="range"  id="rate" min="1" max="20"  step="0.25" value="10,25" onchange="updaterate()"> <span id="rate_val"> 10.25</span>  <span>%</span>  <br/>
+                <br>
+                 <label > No. of Years </label>
+               <select name="" id="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    
+                </select>  <br/><br>
+                
+        
+                <button onclick="compute()">Compute Interest</button> <br><br>
+                <span id="result"></span> <br>
+            </div>
+            <div class="second">
+                <footer>
+                  <br>  &#169; This Calculator belongs to Ismael Damian Alban
+                </footer>
+            </div>
+            
+        </div>
+
+    </body>
+</html>
